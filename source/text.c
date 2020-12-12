@@ -145,7 +145,7 @@ const char* C2D_TextFontParseLine(C2D_Text* text, C2D_Font font, C2D_TextBuf buf
 	text->begin = buf->glyphCount;
 	text->width = 0.0f;
 	u32 wordNum = 0;
-	bool lastWasWhitespace = false;
+	bool lastWasWhitespace = true;
 	while (buf->glyphCount < buf->glyphBufSize)
 	{
 		uint32_t code;
